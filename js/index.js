@@ -1,4 +1,4 @@
-const SECRET2 = '-y4hyRoJ_'
+const SECRET2 = 'seVSyqUo2sYFd'
 
 function getQueryStringObject() {
     var a = window.location.search.substr(1).split('&');
@@ -31,7 +31,7 @@ if (!docs && !edit) {
     title = edit
 }
 document.querySelector('#logo').innerHTML = WIKI_TITLE
-const SECRET3 = 'Jkjn4rM'
+const SECRET3 = 'mvAVMIfmNVI'
 
 document.querySelector('#search-button').href = './'
 document.querySelector('#search-input').addEventListener("input", (e) => {
