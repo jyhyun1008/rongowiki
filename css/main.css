@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+    font-weight: 700;
+}
+
+:root {
+    --accent: #3adfb6;
+    --bg: #f8f8f8;
+    line-height: 1.6rem;
+}
+
+body {
+    background: var(--bg);
+    font-family: 'NanumSquareNeo';
+    margin: 0;
+    font-size: 14px;
+}
+
+input {
+    padding: 0.3em;
+    border-radius: 10px;
+    border: 0;
+    padding: 5px;
+    font-family: 'NanumSquareNeo';
+}
+
+p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    line-height: 1.6rem;
+}
+
+li {
+    line-height: 1.6rem;
+}
+
+i {
+    font-size: 1.6rem;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+table {
+    min-width: 300px;
+    max-width: 100%;
+    width: fit-content;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+}
+
+td {
+    padding: 5px;
+}
+
+pre {
+    overflow-x: scroll;
+}
+
+code, pre {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--bg);
+}
+
+button {
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--accent);
+    color: white;
+    padding: 5px;
+    font-family: 'NanumSquareNeo';
+}
+
+textarea {
+    height: 400px;
+    resize: none;
+}
+
+img {
+    max-width: calc(100% - 30px);
+}
+
+#navbar {
+    width: calc(100vw - 2em);
+    display: flex;
+    gap: 12px;
+    background-color: var(--accent);
+    color: white;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#member-info, #search {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo {
+    font-size: 1.3em;
+    font-weight: 700;
+    height: 1.3em;
+    max-height: 1.3em;
+}
+
+#search-input {
+    Max-width: 40vw;
+}
+
+#sub-wrapper {
+    width: calc(100% - 30px);
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 40px;
+}

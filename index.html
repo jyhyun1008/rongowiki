@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Chocospread</title>
+    <link rel="shortcut icon" href="./assets/sheet.ico">
+    <link rel="stylesheet" media="screen" href="./css/main.css?v=0.0.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="app">
+        <div id="wrapper">
+            <div id="navbar">
+                <a href="./"><div id="logo"></div></a>
+                <div id="member-info">
+                    <div id="search"><input id="search-input"> <a id="search-button"><i class='bx bx-search'></i></a></div>
+                    <div id="status"><span id="isLogin"><i class="bx bx-user-x" onclick="handleAuthClick()" ></i></span></div>
+                </div>
+            </div>
+            <div id="sub-wrapper">
+                <div id="title-box">
+                    <h1 id="doc-title"></h1>
+                </div>
+                <div id="content-box">
+                    <div id="content"></div>
+                </div>
+                <div id="footer">
+                    <!--Add buttons to initiate auth sequence and sign out-->
+                    <button id="edit_button" onclick="handleEditClick()" style="display: none;">편집</button> <button id="history_button" onclick="handleHistoryClick()" style="display: none;">역사</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="./settings.js?v=0.0.0"></script>
+    <script src="./js/index.js?v=0.0.0"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+</body>
