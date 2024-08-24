@@ -121,6 +121,11 @@ img {
     max-height: 1.3em;
 }
 
+#logo img {
+    height: 1.3em;
+    max-height: 1.3em;
+}
+
 #search-input {
     Max-width: 40vw;
 }
