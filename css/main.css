@@ -122,8 +122,11 @@ img {
 }
 
 #logo img {
-    height: 1.3em;
-    max-height: 1.3em;
+    height: 2.4em;
+    max-height: 2.4em;
+    position: relative;
+    top: -0.6em;
+    max-width: none;
 }
 
 #search-input {
