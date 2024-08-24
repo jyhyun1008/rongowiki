@@ -375,7 +375,7 @@ async function renderContent(title) {
             }
         } catch (err2) {
             try {
-                if (response_err.result && localStorage.getItem('googleToken')) {
+                if (localStorage.getItem('googleToken')) {
                     if (confirm("대문 문서를 생성하시겠습니까?") == true) {
                         tokenDelivery()
                         postDocs('대문')
